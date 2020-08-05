@@ -1,0 +1,81 @@
+<! DOCTYPE html>
+<html>
+<head>
+<style >
+input[ type=text], input[ type=date],input[ type=number], select {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:lime ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:red;
+}
+
+
+div {
+  border-radius: 25px;
+  background-color: palegreen;
+  padding: 20px;
+  width: 420px;
+  color: thick black;
+height: 100%;
+align: middle;
+border-radius: 50px;
+}
+</style>
+</head>
+<body>
+<center><h1>Booking</h1></center>
+<form action="booking.php" method="post">
+<center>
+<div>
+
+<table border="0" style="font-size: 20px;">
+<tr>
+<tr><td> Booking Id</td><td><input type="number" name="id"  placeholder=" Your Id"></td></tr>
+<tr><td>Name</td>
+ <td><input type="text" name="name"  placeholder="Enter Your Name"></td></tr>
+<tr><td>Email</td>
+ <td><input type="text" name="email"  placeholder="Enter Your email"></td></tr>
+<tr><td>Sourceplace</td>
+<td><input type="text" name="place" placeholder="Enter your Place"></td></tr>
+<tr><td>Destination</td>
+<td><input type="text" name="destination" placeholder="Destination place"></td></tr>
+<tr><td>No:of Days</td>
+<td><input type="number" name="days" placeholder="Enter No:of Days"></td></tr>
+<tr><td>Type of Travels</td>
+ <td><select name="vechical">
+<option value="">select</option>
+<option value="car">Car</option>
+<option value="bus">Bus</option>
+<option value="train">Train</option>
+<option value="flight">Flight</option>
+</select></td>
+<tr><td> date</td>
+ <td><input type="date" name="pdate"  placeholder="Choose Your Date"></td></tr>
+ 
+<td align=right ><input type="submit"  value="Cancel"></td>
+<td ><input type="submit"  value="Submit"></td></tr></th>
+</table> 
+</div>
+</center>
+</form >
+
+</body>
+</html>
